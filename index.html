@@ -3,7 +3,7 @@
 <body><div class="b"><div class="s"></div><div id="m">جارٍ تحميل الكتاب… قد يستغرق لحظات</div></div>
 <script>(async()=>{const m=document.getElementById('m');try{const h=location.hash.slice(1);if(!h){m.textContent='الرابط غير صالح';return}
 const p=h.replace(/-/g,'+').replace(/_/g,'/');const kb=Uint8Array.from(atob(p+'='.repeat((4-p.length%4)%4)),c=>c.charCodeAt(0));
-const vv=(await(await fetch('v.txt?'+Date.now(),{cache:'no-store'})).text()).trim();const r=await fetch('p.bin?v=11020145'+vv,{cache:'force-cache'});const buf=new Uint8Array(await r.arrayBuffer());
+const vv=(await(await fetch('v.txt?'+Date.now(),{cache:'no-store'})).text()).trim();const r=await fetch('p.bin?v=11112211'+vv,{cache:'force-cache'});const buf=new Uint8Array(await r.arrayBuffer());
 const key=await crypto.subtle.importKey('raw',kb,'AES-GCM',false,['decrypt']);
 const pt=await crypto.subtle.decrypt({name:'AES-GCM',iv:buf.slice(0,12)},key,buf.slice(12));
 const html=new TextDecoder().decode(pt);document.open();document.write(html);document.close()}catch(e){m.textContent='تعذّر فتح الصفحة: الرابط غير صحيح أو ناقص'}})()</script></body></html>
